@@ -1,4 +1,4 @@
-package im.wsb.springanimator;
+package im.wsb.springanimator.lib;
 
 import android.animation.TimeAnimator;
 
@@ -40,6 +40,9 @@ public class SpringAnimator extends TimeAnimator implements TimeAnimator.TimeLis
 
   public void setVelocity(double velocity) {
     mSpring.setVelocity(velocity);
+    if (!mSpring.isAtRest()) {
+      start();
+    }
   }
 
   public double getVelocity() {

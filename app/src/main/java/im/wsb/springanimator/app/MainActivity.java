@@ -1,4 +1,4 @@
-package im.wsb.springanimator;
+package im.wsb.springanimator.app;
 
 import android.animation.ArgbEvaluator;
 import android.content.res.Resources;
@@ -6,6 +6,12 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
 import android.view.View;
+
+import im.wsb.springanimator.R;
+import im.wsb.springanimator.lib.Spring;
+import im.wsb.springanimator.lib.SpringAnimator;
+import im.wsb.springanimator.lib.SpringConfig;
+import im.wsb.springanimator.lib.SpringListener;
 
 
 public class MainActivity extends AppCompatActivity implements SpringListener, View.OnTouchListener {
@@ -60,7 +66,7 @@ public class MainActivity extends AppCompatActivity implements SpringListener, V
     mAnimatedView.setScaleX(scale);
     mAnimatedView.setScaleY(scale);
 
-    float rot = (float) lerp(spring.getCurrentValue(), 0, 1, 0, 360);
+    float rot = (float) lerp(spring.getCurrentValue(), 0, 1, 0, 180);
     mAnimatedView.setRotation(rot);
 
     Integer color = (Integer) mArgbEvaluator.evaluate(

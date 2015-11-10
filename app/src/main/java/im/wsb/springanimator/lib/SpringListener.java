@@ -8,7 +8,7 @@
  *
  */
 
-package im.wsb.springanimator;
+package im.wsb.springanimator.lib;
 
 public interface SpringListener {
   void onSpringUpdate(Spring spring);

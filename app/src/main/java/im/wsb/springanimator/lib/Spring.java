@@ -1,6 +1,4 @@
-package im.wsb.springanimator;
-
-import android.util.Log;
+package im.wsb.springanimator.lib;
 
 import java.util.concurrent.CopyOnWriteArraySet;
 

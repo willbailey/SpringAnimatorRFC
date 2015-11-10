@@ -1,4 +1,4 @@
-package im.wsb.springanimator;
+package im.wsb.springanimator.lib;
 
 public class SpringConfig {
   public double friction;
